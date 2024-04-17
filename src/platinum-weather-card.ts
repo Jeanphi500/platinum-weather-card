@@ -2462,13 +2462,13 @@ export class PlatinumWeatherCard extends LitElement {
 
   get localeTextObservedMax(): string {
     switch (this.locale) {
-      default: return "Observed Max";
+      default: return "Max dernières 24h";
     }
   }
 
   get localeTextObservedMin(): string {
     switch (this.locale) {
-      default: return "Observed Min";
+      default: return "Min dernières 24h";
     }
   }
 
@@ -2487,7 +2487,7 @@ export class PlatinumWeatherCard extends LitElement {
   get localeTextForecastMax(): string {
     switch (this.locale) {
       case 'it': return "Max oggi";
-      case 'fr': return "Max aujourd'hui";
+      case 'fr': return "Max prévu auj.";
       case 'de': return "Max heute";
       case 'nl': return "Max vandaag";
       case 'pl': return "Maks Temperatura";
@@ -2503,7 +2503,7 @@ export class PlatinumWeatherCard extends LitElement {
   get localeTextForecastMin(): string {
     switch (this.locale) {
       case 'it': return "Min oggi";
-      case 'fr': return "Min aujourd'hui";
+      case 'fr': return "Min prévu auj.";
       case 'de': return "Min heute";
       case 'nl': return "Min vandaag";
       case 'pl': return "Min Temperatura";
